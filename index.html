@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietchat</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- Content -->
+    <div class="content">
+        <aside class="sidebar-chat">
+            <div class="sidebar-chat__top">
+                <button class="hamburger" id="hamburger-toggle">
+                    Меню
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                    <span class="hamburger__inner"></span>
+                </button>
+                <input type="text" class="sidebar-chat__input input" placeholder="Поиск">
+            </div>
+            <div class="tabs">
+                <ul class="tabs__list" role="tablist">
+                    <li class="tabs__item tabs__item--active">
+                        Все <span>1752</span>
+                    </li>
+                    <li class="tabs__item">
+                        Ожидают <span>1752</span>
+                    </li>
+                </ul>
+                <div class="tabs__content tabs__content--active">
+                    <div class="messages">
+                        <div class="messages__item messages__item--continue">
+                            <div class="messages__top">
+                                <div class="messages__author">
+                                    <div class="messages__ava">
+                                        <img src="img/dist/ava.png" alt="">
+                                    </div>
+                                    <div class="messages__name">Madge Lambert</div>
+                                </div>
+                                <span class="messages__data"></span>
+                            </div>
+                            <p class="messages__paragraph">Необходимо продолжить общение</p>
+                        </div>
+                        <div class="messages__item messages__item--active">
+                            <div class="messages__top">
+                                <div class="messages__author">
+                                    <div class="messages__ava">
+                                        <img src="img/dist/ava.png" alt="">
+                                    </div>
+                                    <div class="messages__name">Madge Lambert</div>
+                                </div>
+                                <span class="messages__data messages__data--active">Сегодня</span>
+                            </div>
+                            <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
+                        </div>
+                        <div class="messages__item">
+                            <div class="messages__top">
+                                <div class="messages__author">
+                                    <div class="messages__ava">
+                                        <img src="img/dist/ava.png" alt="">
+                                    </div>
+                                    <div class="messages__name">Madge Lambert</div>
+                                </div>
+                                <span class="messages__data messages__data--active">Сегодня</span>
+                            </div>
+                            <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
+                        </div>
+                        <div class="messages__item">
+                            <div class="messages__top">
+                                <div class="messages__author">
+                                    <div class="messages__ava">
+                                        <img src="img/dist/ava.png" alt="">
+                                    </div>
+                                    <div class="messages__name">Madge Lambert</div>
+                                </div>
+                                <span class="messages__data">Сегодня</span>
+                            </div>
+                            <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
+                        </div>
+                        <div class="messages__item">
+                            <div class="messages__top">
+                                <div class="messages__author">
+                                    <div class="messages__ava">
+                                        <img src="img/dist/ava.png" alt="">
+                                    </div>
+                                    <div class="messages__name">Madge Lambert</div>
+                                </div>
+                                <span class="messages__data">Сегодня</span>
+                            </div>
+                            <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
+                        </div>
+                        <div class="messages__item">
+                            <div class="messages__top">
+                                <div class="messages__author">
+                                    <div class="messages__ava">
+                                        <img src="img/dist/ava.png" alt="">
+                                    </div>
+                                    <div class="messages__name">Madge Lambert</div>
+                                </div>
+                                <span class="messages__data">Сегодня</span>
+                            </div>
+                            <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__content">
+                    <div class="messages">
+                        <div class="messages__item messages__item--active">
+                            <div class="messages__top">
+                                <div class="messages__author">
+                                    <div class="messages__ava">
+                                        <img src="img/dist/ava.png" alt="">
+                                    </div>
+                                    <div class="messages__name">Madge Lambert</div>
+                                </div>
+                                <span class="messages__data messages__data--active">Сегодня</span>
+                            </div>
+                            <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
+                        </div>
+                        <div class="messages__item">
+                            <div class="messages__top">
+                                <div class="messages__author">
+                                    <div class="messages__ava">
+                                        <img src="img/dist/ava.png" alt="">
+                                    </div>
+                                    <div class="messages__name">Madge Lambert</div>
+                                </div>
+                                <span class="messages__data messages__data--active">Сегодня</span>
+                            </div>
+                            <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
+                        </div>
+                        <div class="messages__item">
+                            <div class="messages__top">
+                                <div class="messages__author">
+                                    <div class="messages__ava">
+                                        <img src="img/dist/ava.png" alt="">
+                                    </div>
+                                    <div class="messages__name">Madge Lambert</div>
+                                </div>
+                                <span class="messages__data">Сегодня</span>
+                            </div>
+                            <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
+                        </div>
+                        <div class="messages__item">
+                            <div class="messages__top">
+                                <div class="messages__author">
+                                    <div class="messages__ava">
+                                        <img src="img/dist/ava.png" alt="">
+                                    </div>
+                                    <div class="messages__name">Madge Lambert</div>
+                                </div>
+                                <span class="messages__data">Сегодня</span>
+                            </div>
+                            <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
+                        </div>
+                        <div class="messages__item">
+                            <div class="messages__top">
+                                <div class="messages__author">
+                                    <div class="messages__ava">
+                                        <img src="img/dist/ava.png" alt="">
+                                    </div>
+                                    <div class="messages__name">Madge Lambert</div>
+                                </div>
+                                <span class="messages__data">Сегодня</span>
+                            </div>
+                            <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
+                        </div>
+                        <div class="messages__item">
+                            <div class="messages__top">
+                                <div class="messages__author">
+                                    <div class="messages__ava">
+                                        <img src="img/dist/ava.png" alt="">
+                                    </div>
+                                    <div class="messages__name">Madge Lambert</div>
+                                </div>
+                                <span class="messages__data">Сегодня</span>
+                            </div>
+                            <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
+                        </div>
+                        <div class="messages__item">
+                            <div class="messages__top">
+                                <div class="messages__author">
+                                    <div class="messages__ava">
+                                        <img src="img/dist/ava.png" alt="">
+                                    </div>
+                                    <div class="messages__name">Madge Lambert</div>
+                                </div>
+                                <span class="messages__data">Сегодня</span>
+                            </div>
+                            <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
+                        </div>
+                        <div class="messages__item">
+                            <div class="messages__top">
+                                <div class="messages__author">
+                                    <div class="messages__ava">
+                                        <img src="img/dist/ava.png" alt="">
+                                    </div>
+                                    <div class="messages__name">Madge Lambert</div>
+                                </div>
+                                <span class="messages__data">Сегодня</span>
+                            </div>
+                            <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
+                        </div>
+                        <div class="messages__item">
+                            <div class="messages__top">
+                                <div class="messages__author">
+                                    <div class="messages__ava">
+                                        <img src="img/dist/ava.png" alt="">
+                                    </div>
+                                    <div class="messages__name">Madge Lambert</div>
+                                </div>
+                                <span class="messages__data">Сегодня</span>
+                            </div>
+                            <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="main">
+            <div class="switch">
+                <ul class="switch__list" role="tablist">
+                    <li class="switch__item switch__item--active">
+                        Сообщения
+                    </li>
+                    <li class="switch__item">
+                        Анкета здоровья
+                    </li>
+                    <li class="switch__item">
+                        Контроль
+                    </li>
+                </ul>
+                <div class="switch__content switch__content--active">
+                    <div class="chat">
+                        <div class="chat__wrapper">
+                            <div class="chat__item chat__item--me">
+                                <div class="chat__author">Madge Lambert</div>
+                                <p class="chat__text">
+                                    Привет! Можно ли мне есть сладкое?
+                                    <span class="chat__data">17:56</span>
+                                </p>
+                            </div>
+                            <div class="chat__item chat__item--from">
+                                <div class="chat__author">Bot</div>
+                                <p class="chat__text">
+                                    Привет! Только медленные углеводы! Медленные углеводы – это крахмал, гликоген, инсулин и клетчатка. Они расщепляются медленно и без излишней нагрузки
+                                    <span class="chat__data">17:56</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="chat__message"></div>
+                    </div>
+                </div>
+                <div class="switch__content">
+                    <div class="tabs__wrap">
+                        <div class="tabs__wrapper">
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">32 года</div>
+                                <div class="tabs__value">32 года</div>
+                            </div>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Дети</div>
+                                <div class="tabs__value">2</div>
+                            </div>
+                        </div>
+                        <div class="tabs__wrapper">
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Вес на данный момент</div>
+                                <div class="tabs__value tabs__value--green">78 кг (-4)</div>
+                            </div>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Целевой вес</div>
+                                <div class="tabs__value">65 кг</div>
+                            </div>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Самый большой вес</div>
+                                <div class="tabs__value">90,5 кг</div>
+                            </div>
+                        </div>
+                        <div class="tabs__wrapper">
+                            <a href="" class="tabs__edit">Ред.</a>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Заболевания</div>
+                                <ul class="tabs__value">
+                                    <li class="tabs__elem">Панкреатит</li>
+                                    <li class="tabs__elem">Язва желудка (ремиссия)</li>
+                                    <li class="tabs__elem">Сахарный диабет</li>
+                                    <li class="tabs__elem">Варикоз</li>
+                                    <li class="tabs__elem">Псориаз</li>
+                                </ul>
+                            </div>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Аллергия на продукты питания</div>
+                                <ul class="tabs__value">
+                                    <li class="tabs__elem tabs__elem--accent">На белок</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--<div class="tabs__wrapper tabs__wrapper--edit">
+                            <a href="" class="tabs__edit">Ред.</a>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Заболевания</div>
+                                <ul class="tabs__value">
+                                    <input type="text" class="tabs__input input" placeholder="Указать заболевание">
+                                    <li class="tabs__elem">Панкреатит</li>
+                                    <li class="tabs__elem">Язва желудка (ремиссия)</li>
+                                    <li class="tabs__elem">Сахарный диабет</li>
+                                    <li class="tabs__elem">Варикоз</li>
+                                    <li class="tabs__elem">Псориаз</li>
+                                </ul>
+                            </div>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Аллергия на продукты питания</div>
+                                <ul class="tabs__value">
+                                    <input type="text" class="tabs__input input" placeholder="Указать продукты">
+                                    <li class="tabs__elem">На белок</li>
+                                </ul>
+                            </div>
+                            <div class="tabs__buttons">
+                                <a href="" class="tabs__btn tabs__btn--canceling btn">Отменить</a>
+                                <a href="" class="tabs__btn btn">Сохранить</a>
+                            </div>
+                        </div>-->
+                        <div class="tabs__wrapper">
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Количество ОРВИ и вирусных 
+                                    заболеваний за последний год</div>
+                                <div class="tabs__value">1</div>
+                            </div>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Прием антибиотиков (6 месяцев)</div>
+                                <div class="tabs__value">Да</div>
+                            </div>
+                        </div>
+                        <div class="tabs__wrapper">
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Диеты за последние 2-3 месяца</div>
+                                <p class="tabs__value">Последний раз 2 месяца назад сидела на 
+                                    низкоуглеводной диете</p>
+                            </div>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Какие программы похудения вы 
+                                    проходили прежде?</div>
+                                <div class="tabs__value">Худела сама, без программ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="switch__content">
+                    <div class="tabs__wrap">
+                        <div class="tabs__wrapper">
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Марафон, 21 день</div>
+                                <div class="tabs__value">32 года</div>
+                            </div>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading tabs__heading--accent">Отчет от 20.10.2020</div>
+                                <div class="tabs__value">2</div>
+                            </div>
+                        </div>
+                        <div class="tabs__wrapper">
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Вес</div>
+                                <div class="tabs__value">79,5 кг</div>
+                            </div>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Время подъема</div>
+                                <div class="tabs__value">07:00</div>
+                            </div>
+                            <div class="tabs__topic">Завтрак</div>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">08:00</div>
+                                <div class="tabs__value">Бутерброд: хлеб грамм 50, аввкадо 25 гр, форель 
+                                    слабосоленная 105 гр, кофе, 2 ложки меда</div>
+                            </div>
+                            <div class="tabs__topic">1-ый перекус</div>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Вместе с завтраком</div>
+                                <div class="tabs__value"></div>
+                            </div>
+                            <div class="tabs__topic">Обед</div>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">14:00</div>
+                                <p class="tabs__value">Бутерброд: хлеб грамм 50, аввкадо 25 гр, форель 
+                                    слабосоленная 105 гр, кофе, 2 ложки меда</p>
+                            </div>
+                            <div class="tabs__topic">2-ой перекус</div>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">16:00</div>
+                                <div class="tabs__value">Бутерброд: хлеб грамм 50, аввкадо 25 гр, форель 
+                                    слабосоленная 105 гр, кофе, 2 ложки меда</div>
+                            </div>
+                            <div class="tabs__topic">Ужин</div>
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">18:00</div>
+                                <p class="tabs__value">Бутерброд: хлеб грамм 50, аввкадо 25 гр, форель 
+                                    слабосоленная 105 гр, кофе, 2 ложки меда</p>
+                            </div>
+                        </div>
+                        <div class="tabs__wrapper">
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Количество выпитой воды до 
+                                    15:00</div>
+                                <p class="tabs__value">1 л</p>
+                            </div>
+                        </div>
+                        <div class="tabs__wrapper">
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Количество выпитой воды c 15:00 
+                                    до 20:00</div>
+                                <p class="tabs__value">1 л</p>
+                            </div>
+                        </div>
+                        <div class="tabs__wrapper">
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Была ли физическая тренировка
+                                    вчера?</div>
+                                <p class="tabs__value">Да</p>
+                            </div>
+                        </div>
+                        <div class="tabs__wrapper">
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Был ли стул (дефекация) вчера и 
+                                    сколько раз в день?</div>
+                                <p class="tabs__value">1</p>
+                            </div>
+                        </div>
+                        <div class="tabs__wrapper">
+                            <div class="tabs__inner">
+                                <div class="tabs__heading">Время отбоя</div>
+                                <p class="tabs__value">22:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="user-info">
+            <div class="user-info__wrapper user-info__wrapper--inner">
+                <div class="user-info__inner">
+                    <div class="user-info__ava">
+                        <img src="img/dist/ava.png" alt="">
+                    </div>
+                    <div class="user-info__details">
+                        <div class="user-info__name">Ksusharekeda</div>
+                        <div class="user-info__more">
+                            <span class="user-info__time">14:42</span>,
+                            <span class="user-info__city">Москва</span>
+                        </div>
+                        <div class="user-info__status">Заблокирован</div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-info__wrapper user-info__wrapper--padding">
+                <div class="user-info__characters">
+                    <span class="user-info__years">32 года</span>
+                </div>
+                <div class="user-info__characters">
+                    <div class="user-info__road">
+                        <div class="user-info__dynamic">
+                            <span class="user-info__dynamic--old">91 кг</span>
+                            <span class="user-info__dynamic--new">78 кг (-4)</span>
+                        </div>
+                        <a href="" class="user-info__link">Динамика</a>
+                    </div>
+                </div>
+                <div class="user-info__characters user-info__characters--dropdown">
+                    <input type="text" class="user-info__input input" placeholder="Указать заболевание">
+                </div>
+            </div>
+            <div class="user-info__wrapper">
+                <p class="help">Основная программа</p>
+                <p class="user-info__text">Марафон, 21-й день</p>
+            </div>
+            <div class="user-info__wrapper">
+                <input type="text" class="user-info__input input" placeholder="Написать заметку">
+                <div class="user-info__notes">
+                    <p class="user-info__note">Выполняет все по программе, ждем результаты анализов на гармоны</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of content -->
+    <!-- Scripts -->
+    <script src="js/app.min.js"></script>
+</body>
+</html>

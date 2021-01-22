@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietchat - Admin Profile</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <button class="hamburger" id="hamburger-toggle">
+            Меню
+            <span class="hamburger__inner"></span>
+            <span class="hamburger__inner"></span>
+            <span class="hamburger__inner"></span>
+        </button>
+        <h2 class="header__title">Профиль</h2>
+    </header>
+    <!-- End of header -->
+    <!-- Content -->
+    <div class="profile">
+        <form class="profile__wrapper">
+            <a href="" class="profile__heading">Профиль сотрудника</a>
+            <a href="" class="profile__photo"></a>
+            <h4 class="profile__name">Кристина Ивановна Константинова</h4>
+            <div class="profile__line">
+                <div class="profile__status profile__status--error">Нет доступа</div>
+                <a href="" class="profile__link link">Разблокировать</a>
+            </div>
+            <div class="profile__inner">
+                <div class="profile__wrap">
+                    <div class="profile__group">
+                        <span class="profile__help help">Фамилия</span>
+                        <input type="text" class="profile__input input" placeholder="Введите фамилию">
+                    </div>
+                    <div class="profile__group">
+                        <span class="profile__help help">Имя</span>
+                        <input type="text" class="profile__input input" placeholder="Введите имя">
+                    </div>
+                    <div class="profile__group">
+                        <span class="profile__help help">Отчество</span>
+                        <input type="text" class="profile__input input" placeholder="Введите отчество">
+                    </div>
+                </div>
+                <div class="profile__wrap">
+                    <div class="profile__group">
+                        <span class="profile__help help">Эл. почта</span>
+                        <input type="text" class="profile__input input" placeholder="Введите эл. почту">
+                    </div>
+                </div>
+                <div class="profile__wrap">
+                    <div class="profile__group">
+                        <span class="profile__help help">Роль</span>
+                        <select class="profile__select select">
+                            <option value="0">Не выбрана</option>
+                            <option value="1">Куратор</option>
+                        </select>
+                    </div>
+                    <div class="profile__group">
+                        <span class="profile__help help">Кол-во активных чатов</span>
+                        <select class="profile__select select">
+                            <option value="0">Не указано</option>
+                            <option value="1">Куратор</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="profile__btn btn">Сохранить</button>
+            <a href="" class="profile__heading profile__heading--bottom">Удалить пользователя</a>
+        </form>
+    </div>
+    <!-- End of content -->
+    <!-- Scripts -->
+    <script src="js/app.min.js"></script>
+</body>
+</html>
