@@ -13,7 +13,7 @@
     <div class="content">
         <aside class="sidebar-chat">
             <div class="sidebar-chat__top">
-                <button class="hamburger" id="hamburger-toggle">
+                <button class="hamburger">
                     Меню
                     <span class="hamburger__inner"></span>
                     <span class="hamburger__inner"></span>
@@ -235,23 +235,118 @@
                 </ul>
                 <div class="switch__content switch__content--active">
                     <div class="chat">
-                        <div class="chat__wrapper">
-                            <div class="chat__item chat__item--me">
-                                <div class="chat__author">Madge Lambert</div>
-                                <p class="chat__text">
-                                    Привет! Можно ли мне есть сладкое?
-                                    <span class="chat__data">17:56</span>
-                                </p>
-                            </div>
-                            <div class="chat__item chat__item--from">
-                                <div class="chat__author">Bot</div>
-                                <p class="chat__text">
-                                    Привет! Только медленные углеводы! Медленные углеводы – это крахмал, гликоген, инсулин и клетчатка. Они расщепляются медленно и без излишней нагрузки
-                                    <span class="chat__data">17:56</span>
-                                </p>
+                        <div class="chat__wrap">
+                            <div class="chat__wrapper">
+                                <div class="chat__item chat__item--me">
+                                    <div class="chat__author">Madge Lambert</div>
+                                    <p class="chat__text">
+                                        Привет! Можно ли мне есть сладкое?
+                                        <span class="chat__time">17:56</span>
+                                    </p>
+                                </div>
+                                <div class="chat__data">12 сентября</div>
+                                <div class="chat__item chat__item--note">
+                                    <div class="chat__author">Заметка</div>
+                                    <p class="chat__text">
+                                        Выполняет все по программе, ждем результаты анализов на гармоны
+                                        <span class="chat__time">17:56</span>
+                                    </p>
+                                </div>
+                                <div class="chat__item chat__item--me">
+                                    <div class="chat__author">Madge Lambert</div>
+                                    <p class="chat__text">
+                                        Привет! Можно ли мне есть сладкое?
+                                        <span class="chat__time">17:56</span>
+                                    </p>
+                                </div>
+                                <div class="chat__item chat__item--from">
+                                    <div class="chat__author">Bot</div>
+                                    <p class="chat__text">
+                                        Привет! Только медленные углеводы! Медленные углеводы – это крахмал, гликоген, инсулин и клетчатка. Они расщепляются медленно и без излишней нагрузки
+                                        <span class="chat__time">17:56</span>
+                                    </p>
+                                </div>
+                                <div class="chat__item chat__item--me">
+                                    <div class="chat__author">Madge Lambert</div>
+                                    <p class="chat__text">
+                                        Привет! Можно ли мне есть сладкое?
+                                        <span class="chat__time">17:56</span>
+                                    </p>
+                                </div>
+                                <div class="chat__item chat__item--from">
+                                    <div class="chat__author">Bot</div>
+                                    <p class="chat__text">
+                                        Привет! Только медленные углеводы! Медленные углеводы – это крахмал, гликоген, инсулин и клетчатка. Они расщепляются медленно и без излишней нагрузки
+                                        <span class="chat__time">17:56</span>
+                                    </p>
+                                </div>
+                                <div class="chat__item chat__item--me">
+                                    <div class="chat__author">Madge Lambert</div>
+                                    <p class="chat__text">
+                                        Привет! Можно ли мне есть сладкое?
+                                        <span class="chat__time">17:56</span>
+                                    </p>
+                                </div>
+                                <div class="chat__item chat__item--from">
+                                    <div class="chat__author">Bot</div>
+                                    <p class="chat__text">
+                                        Привет! Только медленные углеводы! Медленные углеводы – это крахмал, гликоген, инсулин и клетчатка. Они расщепляются медленно и без излишней нагрузки
+                                        <span class="chat__time">17:56</span>
+                                    </p>
+                                </div>
+                                <div class="chat__item chat__item--me">
+                                    <div class="chat__author">Madge Lambert</div>
+                                    <p class="chat__text">
+                                        Привет! Можно ли мне есть сладкое?
+                                        <span class="chat__time">17:56</span>
+                                    </p>
+                                </div>
+                                <div class="chat__item chat__item--from">
+                                    <div class="chat__author">Bot</div>
+                                    <p class="chat__text">
+                                        Привет! Только медленные углеводы! Медленные углеводы – это крахмал, гликоген, инсулин и клетчатка. Они расщепляются медленно и без излишней нагрузки
+                                        <span class="chat__time">17:56</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="chat__message"></div>
+                        <div class="chat-panel">
+                            <ul class="chat-panel__list">
+                                <li class="chat-panel__item chat-panel__item--active">
+                                    <button class="chat-panel__link">Cooбщение</button>
+                                </li>
+                                <li class="chat-panel__item">
+                                    <button class="chat-panel__link">Заметка</button>
+                                </li>
+                            </ul>
+                            <div class="chat-panel__content chat-panel__content--active">
+                                <div class="chat-panel__inner">
+                                    <label for="chat-file" class="chat-panel__attach">
+                                        <input type="file" id="chat-file">
+                                    </label>
+                                    <textarea id="message-text" class="chat-panel__text" placeholder="Написать..."></textarea>
+                                    <button class="chat-panel__btn btn">Отправить</button>
+                                </div>
+                                <div class="template">
+                                    <button class="template__item">Добрый день, Ксения!</button>
+                                    <button class="template__item">Здравствуйте, Ксения!</button>
+                                    <button class="template__item">Привет, Ксения!</button>
+                                    <button class="template__item">Привет, Ксения!</button>
+                                    <button class="template__item">Привет, Ксения!</button>
+                                </div>
+                            </div>
+                            <div class="chat-panel__content">
+                                <div class="chat-panel__inner">
+                                    <textarea id="message-text" class="chat-panel__text" placeholder="Оставить заметку..."></textarea>
+                                    <button class="chat-panel__btn btn">Сохранить</button>
+                                </div>
+                            </div>
+                            <!--<p class="chat-panel__help">Диалог уже забран</p>-->
+                            <!--<div class="chat-panel__busy">
+                                <div class="chat-panel__heading">Куратор Константинова А.</div>
+                                <button class="chat-panel__btn btn">Отправить</button>
+                            </div>-->
+                        </div>
                     </div>
                 </div>
                 <div class="switch__content">
@@ -294,8 +389,8 @@
                             </div>
                             <div class="tabs__inner">
                                 <div class="tabs__heading">Аллергия на продукты питания</div>
-                                <ul class="tabs__value">
-                                    <li class="tabs__elem tabs__elem--accent">На белок</li>
+                                <ul class="tabs__value tabs__value--accent">
+                                    <li class="tabs__elem">На белок</li>
                                 </ul>
                             </div>
                         </div>
@@ -438,7 +533,7 @@
                 </div>
             </div>
         </main>
-        <div class="user-info">
+        <aside class="user-info">
             <div class="user-info__wrapper user-info__wrapper--inner">
                 <div class="user-info__inner">
                     <div class="user-info__ava">
@@ -467,8 +562,42 @@
                         <a href="" class="user-info__link">Динамика</a>
                     </div>
                 </div>
+                <div class="user-info__characters">
+                    <div class="user-info__edit help">Ред.</div>
+                    <ul class="user-info__list">
+                        <li class="user-info__item">Панкреатит</li>
+                        <li class="user-info__item">Язва</li>
+                        <li class="user-info__item">Дибет</li>
+                        <li class="user-info__item">Варикоз</li>
+                        <li class="user-info__item">Псориаз</li>
+                    </ul>
+                    <div class="user-info__help help">Аллергии</div>
+                    <ul class="user-info__list user-info__list--accent">
+                        <li class="user-info__item">На белок</li>
+                    </ul>
+                </div>
                 <div class="user-info__characters user-info__characters--dropdown">
                     <input type="text" class="user-info__input input" placeholder="Указать заболевание">
+                    <ul class="user-info__list">
+                        <li class="user-info__item">Панкреатит</li>
+                        <li class="user-info__item">Язва</li>
+                        <li class="user-info__item">Дибет</li>
+                        <li class="user-info__item">Варикоз</li>
+                        <li class="user-info__item">Псориаз</li>
+                    </ul>
+                    <div class="user-info__help help">Аллергии</div>
+                    <select class="user-info__select select">
+                        <option value="0">Витамин B12</option>
+                        <option value="1">Витамин C</option>
+                        <option value="2">Витамин A</option>
+                    </select>
+                    <ul class="user-info__list">
+                        <li class="user-info__item">На белок</li>
+                    </ul>
+                    <div class="user-info__buttons">
+                        <a href="" class="user-info__btn">Отменить</a>
+                        <a href="" class="user-info__btn user-info__btn--accent">Сохранить</a>
+                    </div>
                 </div>
             </div>
             <div class="user-info__wrapper">
@@ -481,7 +610,7 @@
                     <p class="user-info__note">Выполняет все по программе, ждем результаты анализов на гармоны</p>
                 </div>
             </div>
-        </div>
+        </aside>
     </div>
     <!-- End of content -->
     <!-- Scripts -->
