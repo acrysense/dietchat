@@ -13,22 +13,137 @@
     <div class="content">
         <aside class="sidebar-chat">
             <div class="sidebar-chat__top">
-                <button class="hamburger">
-                    Меню
-                    <span class="hamburger__inner"></span>
-                    <span class="hamburger__inner"></span>
-                    <span class="hamburger__inner"></span>
-                </button>
+                <div class="sidebar-chat__hamburger">
+                    <button class="hamburger">
+                        Меню
+                        <span class="hamburger__inner"></span>
+                        <span class="hamburger__inner"></span>
+                        <span class="hamburger__inner"></span>
+                    </button>
+                    <ul class="dropdown dropdown--main">
+                        <li class="dropdown__item">
+                            <a href="index.html" class="dropdown__link dropdown__link--chat">Сообщения</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="users.html" class="dropdown__link dropdown__link--users">Пользователи</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="profile.html" class="dropdown__link dropdown__link--profile">Профиль</a>
+                        </li>
+                        <li class="dropdown__item dropdown__item--separator">
+                            <a href="" class="dropdown__link dropdown__link--day-off">Выходной день</a>
+                        </li>
+                        <li class="dropdown__item dropdown__item--separator">
+                            <a href="" class="dropdown__link dropdown__link--exit">Выйти</a>
+                        </li>
+                    </ul>
+                </div>
                 <input type="text" class="sidebar-chat__input input" placeholder="Поиск">
+                <div class="sidebar-chat__dropdown">
+                    <button class="sidebar-chat__icon">
+                        <svg fill="#939393" height="20" viewBox="-4 0 393 393.99003" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m368.3125 0h-351.261719c-6.195312-.0117188-11.875 3.449219-14.707031 8.960938-2.871094 5.585937-2.3671875 12.3125 1.300781 17.414062l128.6875 181.28125c.042969.0625.089844.121094.132813.183594 4.675781 6.3125 7.203125 13.957031 7.21875 21.816406v147.796875c-.027344 4.378906 1.691406 8.582031 4.777344 11.6875 3.085937 3.105469 7.28125 4.847656 11.65625 4.847656 2.226562 0 4.425781-.445312 6.480468-1.296875l72.3125-27.574218c6.480469-1.976563 10.78125-8.089844 10.78125-15.453126v-120.007812c.011719-7.855469 2.542969-15.503906 7.214844-21.816406.042969-.0625.089844-.121094.132812-.183594l128.683594-181.289062c3.667969-5.097657 4.171875-11.820313 1.300782-17.40625-2.832032-5.511719-8.511719-8.9726568-14.710938-8.960938zm-131.53125 195.992188c-7.1875 9.753906-11.074219 21.546874-11.097656 33.664062v117.578125l-66 25.164063v-142.742188c-.023438-12.117188-3.910156-23.910156-11.101563-33.664062l-124.933593-175.992188h338.070312zm0 0"/></svg>
+                    </button>
+                    <ul class="dropdown">
+                        <li class="dropdown__item">
+                            <label for="sort-new" class="filter-checkbox">
+                                <input type="radio" name="sort" id="sort-new" class="filter-checkbox__input">
+                                <span class="filter-checkbox__icon"></span>
+                                <span class="filter-checkbox__help">Сначала новые</span>
+                                <span class="filter-checkbox__value">643</span>
+                            </label>
+                        </li>
+                        <li class="dropdown__item">
+                            <label for="sort-old" class="filter-checkbox">
+                                <input type="radio" name="sort" id="sort-old" class="filter-checkbox__input">
+                                <span class="filter-checkbox__icon"></span>
+                                <span class="filter-checkbox__help">Сначала старые</span>
+                                <span class="filter-checkbox__value">736</span>
+                            </label>
+                        </li>
+                        <li class="dropdown__item dropdown__item--separator">
+                            <label for="period-length-all" class="filter-checkbox">
+                                <input type="radio" name="period-length" id="period-length-all" class="filter-checkbox__input">
+                                <span class="filter-checkbox__icon"></span>
+                                <span class="filter-checkbox__help">Любая длина</span>
+                                <span class="filter-checkbox__value"></span>
+                            </label>
+                        </li>
+                        <li class="dropdown__item">
+                            <label for="period-length-long" class="filter-checkbox">
+                                <input type="radio" name="period-length" id="period-length-long" class="filter-checkbox__input">
+                                <span class="filter-checkbox__icon"></span>
+                                <span class="filter-checkbox__help">Сначала длинные</span>
+                                <span class="filter-checkbox__value"></span>
+                            </label>
+                        </li>
+                        <li class="dropdown__item">
+                            <label for="period-length-short" class="filter-checkbox">
+                                <input type="radio" name="period-length" id="period-length-short" class="filter-checkbox__input">
+                                <span class="filter-checkbox__icon"></span>
+                                <span class="filter-checkbox__help">Сначала короткие</span>
+                                <span class="filter-checkbox__value"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-chat__dropdown">
+                    <button class="sidebar-chat__icon">
+                        <svg id="Layer" fill="#939393" enable-background="new 0 0 64 64" height="20" viewBox="0 0 64 64" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m31.414 15.586-7-7c-.78-.781-2.048-.781-2.828 0l-7 7c-.781.781-.781 2.047 0 2.828.78.781 2.048.781 2.828 0l3.586-3.586v39.172c0 1.104.896 2 2 2s2-.896 2-2v-39.172l3.586 3.586c.39.391.902.586 1.414.586s1.024-.195 1.414-.586c.781-.781.781-2.047 0-2.828z"/><path d="m49.414 45.586c-.781-.781-2.047-.781-2.828 0l-3.586 3.586v-39.172c0-1.104-.896-2-2-2s-2 .896-2 2v39.172l-3.586-3.586c-.781-.781-2.048-.781-2.828 0-.781.781-.781 2.047 0 2.828l7 7c.391.391.902.586 1.414.586s1.023-.195 1.414-.586l7-7c.781-.781.781-2.047 0-2.828z"/></svg>
+                    </button>
+                    <ul class="dropdown">
+                        <li class="dropdown__item">
+                            <label for="period-now" class="filter-checkbox">
+                                <input type="radio" name="period" id="period-now" class="filter-checkbox__input">
+                                <span class="filter-checkbox__icon"></span>
+                                <span class="filter-checkbox__help">Сегодня</span>
+                                <span class="filter-checkbox__value">643</span>
+                            </label>
+                        </li>
+                        <li class="dropdown__item">
+                            <label for="period-yesterday" class="filter-checkbox">
+                                <input type="radio" name="period" id="period-yesterday" class="filter-checkbox__input">
+                                <span class="filter-checkbox__icon"></span>
+                                <span class="filter-checkbox__help">Вчера</span>
+                                <span class="filter-checkbox__value">736</span>
+                            </label>
+                        </li>
+                        <li class="dropdown__item">
+                            <label for="period-select" class="filter-checkbox">
+                                <input type="radio" name="period" id="period-select" class="filter-checkbox__input">
+                                <span class="filter-checkbox__icon"></span>
+                                <span class="filter-checkbox__help">Выбрать период</span>
+                                <span class="filter-checkbox__value"></span>
+                            </label>
+                        </li>
+                        <li class="dropdown__item dropdown__item--separator">
+                            <label for="waiting" class="filter-checkbox">
+                                <input type="radio" name="waiting" id="waiting" class="filter-checkbox__input">
+                                <span class="filter-checkbox__icon"></span>
+                                <span class="filter-checkbox__help">Ожидающие дольше всего</span>
+                                <span class="filter-checkbox__value">736</span>
+                            </label>
+                        </li>
+                        <li class="dropdown__item dropdown__item--separator">
+                            <label for="control" class="filter-checkbox">
+                                <input type="radio" name="control" id="control" class="filter-checkbox__input">
+                                <span class="filter-checkbox__icon"></span>
+                                <span class="filter-checkbox__help">Контроль</span>
+                                <span class="filter-checkbox__value">736</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="tabs">
                 <ul class="tabs__list" role="tablist">
                     <li class="tabs__item tabs__item--active">
-                        Все <span>1752</span>
+                        <button class="tabs__btn">Все <span>1752</span></button>
                     </li>
                     <li class="tabs__item">
-                        Ожидают <span>1752</span>
+                        <button class="tabs__btn">Ожидают <span>1752</span></button>
                     </li>
+                    <button class="tabs__icon tabs__icon--star"></button>
+                    <button class="tabs__icon tabs__icon--history"></button>
                 </ul>
                 <div class="tabs__content tabs__content--active">
                     <div class="messages">
@@ -235,7 +350,7 @@
                 </ul>
                 <div class="switch__content switch__content--active">
                     <div class="chat">
-                        <div class="chat__wrap">
+                        <div class="chat__wrap" id="chat-wrap">
                             <div class="chat__wrapper">
                                 <div class="chat__item chat__item--me">
                                     <div class="chat__author">Madge Lambert</div>
@@ -322,9 +437,99 @@
                             <div class="chat-panel__content chat-panel__content--active">
                                 <div class="chat-panel__inner">
                                     <label for="chat-file" class="chat-panel__attach">
+                                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g id="icon/paperclip-24px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="clip" transform="translate(2.000000, 1.000000)" fill="#939393" fill-rule="nonzero">
+                                                    <path d="M13.3062134,7.1460724 C13.6837006,6.76858523 13.6837006,6.15661621 13.3062134,5.7789612 C12.9287262,5.40147399 12.3165894,5.40147399 11.9391022,5.7789612 L4.11576842,13.6022949 C2.93009948,14.7881317 2.93009948,16.7175293 4.11593626,17.9031982 C4.70877077,18.4960327 5.48757937,18.7924499 6.26622008,18.7924499 C7.04502868,18.7924499 7.82383727,18.4960327 8.41667174,17.9031982 L12.1551208,14.164917 C12.1551208,14.164917 12.1552887,14.1647492 12.1552887,14.1647492 L18.4476929,7.87217711 C20.2461701,6.07369993 20.2461701,3.1472931 18.4476929,1.34881592 C16.6492157,-0.449661266 13.7228089,-0.44949343 11.9243317,1.34881592 L3.28610227,9.98704528 C3.27049254,10.0024872 3.25656126,10.019104 3.2422943,10.0353851 L1.82600404,11.4516754 C0.662322977,12.6153564 0.021484375,14.1681061 0.021484375,15.8235779 C0.021484375,17.4790497 0.662322977,19.0316315 1.82600404,20.1953125 C2.98968506,21.3589935 4.54226687,21.9998322 6.19773864,21.9998322 C7.85321045,21.9998322 9.40596009,21.3589935 10.5696411,20.1953125 L17.6920471,13.0729065 C18.0695343,12.6954193 18.0695343,12.0832825 17.6920471,11.7057953 C17.3145599,11.3281403 16.7024231,11.3281403 16.3249359,11.7057953 L9.20236204,18.8282013 C8.40391539,19.6268158 7.33691406,20.0664063 6.19773864,20.0664063 C5.05856321,20.0664063 3.99156188,19.6268158 3.19311523,18.8282013 C2.39450071,18.0297546 1.95474245,16.9625854 1.95474245,15.8235779 C1.95474245,14.6844025 2.39450071,13.6174011 3.19311523,12.8187866 L10.3155212,5.69638059 C10.331131,5.68077086 10.3452301,5.66415403 10.3594971,5.64770508 L13.291275,2.71592711 C14.3359528,1.67124938 16.0359039,1.67124938 17.0804138,2.71575928 C18.1250915,3.76043701 18.1250915,5.46038818 17.0804138,6.50506592 L14.87323,8.71224973 C14.8730621,8.71241761 14.8728943,8.71258545 14.8727264,8.71275329 L7.04956055,16.536087 C6.61769105,16.9679565 5.91491699,16.9679565 5.4830475,16.536087 C5.05101012,16.1042175 5.05101012,15.4014435 5.4830475,14.9694061 L13.3062134,7.1460724 Z" id="Path"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
                                         <input type="file" id="chat-file">
                                     </label>
                                     <textarea id="message-text" class="chat-panel__text" placeholder="Написать..."></textarea>
+                                    <button class="chat-panel__icon">
+                                        <svg version="1.1" fill="#939393" id="Capa_1" width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <path d="M437.02,74.98C388.667,26.629,324.38,0,256,0S123.333,26.629,74.98,74.98C26.629,123.333,0,187.62,0,256
+                                                    s26.629,132.668,74.98,181.02C123.333,485.371,187.62,512,256,512s132.667-26.629,181.02-74.98
+                                                    C485.371,388.668,512,324.38,512,256S485.371,123.333,437.02,74.98z M256,472c-119.103,0-216-96.897-216-216S136.897,40,256,40
+                                                    s216,96.897,216,216S375.103,472,256,472z"/>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path d="M368.993,285.776c-0.072,0.214-7.298,21.626-25.02,42.393C321.419,354.599,292.628,368,258.4,368
+                                                    c-34.475,0-64.195-13.561-88.333-40.303c-18.92-20.962-27.272-42.54-27.33-42.691l-37.475,13.99
+                                                    c0.42,1.122,10.533,27.792,34.013,54.273C171.022,389.074,212.215,408,258.4,408c46.412,0,86.904-19.076,117.099-55.166
+                                                    c22.318-26.675,31.165-53.55,31.531-54.681L368.993,285.776z"/>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <circle cx="168" cy="180.12" r="32"/>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <circle cx="344" cy="180.12" r="32"/>
+                                            </g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        </svg>
+                                        <ul class="dropdown dropdown--top">
+                                            <li class="dropdown__item">
+                                                😀
+                                            </li>
+                                            <li class="dropdown__item">😃😄😁😆😅 😂🤣☺️😊</li>
+                                        </ul>
+                                    </button>
+                                    <button class="chat-panel__icon">
+                                        <svg id="Capa_1" fill="#939393" enable-background="new 0 0 512 512" height="24" viewBox="0 0 512 512" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m450.201 407.453c-1.505-.977-12.832-8.912-24.174-32.917-20.829-44.082-25.201-106.18-25.201-150.511 0-.193-.004-.384-.011-.576-.227-58.589-35.31-109.095-85.514-131.756v-34.657c0-31.45-25.544-57.036-56.942-57.036h-4.719c-31.398 0-56.942 25.586-56.942 57.036v34.655c-50.372 22.734-85.525 73.498-85.525 132.334 0 44.331-4.372 106.428-25.201 150.511-11.341 24.004-22.668 31.939-24.174 32.917-6.342 2.935-9.469 9.715-8.01 16.586 1.473 6.939 7.959 11.723 15.042 11.723h109.947c.614 42.141 35.008 76.238 77.223 76.238s76.609-34.097 77.223-76.238h109.947c7.082 0 13.569-4.784 15.042-11.723 1.457-6.871-1.669-13.652-8.011-16.586zm-223.502-350.417c0-14.881 12.086-26.987 26.942-26.987h4.719c14.856 0 26.942 12.106 26.942 26.987v24.917c-9.468-1.957-19.269-2.987-29.306-2.987-10.034 0-19.832 1.029-29.296 2.984v-24.914zm29.301 424.915c-25.673 0-46.614-20.617-47.223-46.188h94.445c-.608 25.57-21.549 46.188-47.222 46.188zm60.4-76.239c-.003 0-213.385 0-213.385 0 2.595-4.044 5.236-8.623 7.861-13.798 20.104-39.643 30.298-96.129 30.298-167.889 0-63.417 51.509-115.01 114.821-115.01s114.821 51.593 114.821 115.06c0 .185.003.369.01.553.057 71.472 10.25 127.755 30.298 167.286 2.625 5.176 5.267 9.754 7.861 13.798z"/></svg>
+                                        <ul class="dropdown dropdown--top">
+                                            <li class="dropdown__item">
+                                                <label for="remember-message" class="square-checkbox">
+                                                    <input type="checkbox" id="remember-message" class="square-checkbox__input">
+                                                    <span class="square-checkbox__icon"></span>
+                                                    <span class="square-checkbox__title">Напомнить через</span>
+                                                </label>
+                                                <select id="timer-message" class="dropdown__select select">
+                                                    <option value="1">1 час</option>
+                                                    <option value="1">2 часа</option>
+                                                </select>
+                                            </li>
+                                        </ul>
+                                    </button>
                                     <button class="chat-panel__btn btn">Отправить</button>
                                 </div>
                                 <div class="template">
@@ -394,7 +599,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <!--<div class="tabs__wrapper tabs__wrapper--edit">
+                        <div class="tabs__wrapper tabs__wrapper--edit">
                             <a href="" class="tabs__edit">Ред.</a>
                             <div class="tabs__inner">
                                 <div class="tabs__heading">Заболевания</div>
@@ -418,7 +623,7 @@
                                 <a href="" class="tabs__btn tabs__btn--canceling btn">Отменить</a>
                                 <a href="" class="tabs__btn btn">Сохранить</a>
                             </div>
-                        </div>-->
+                        </div>
                         <div class="tabs__wrapper">
                             <div class="tabs__inner">
                                 <div class="tabs__heading">Количество ОРВИ и вирусных 
@@ -545,8 +750,63 @@
                             <span class="user-info__time">14:42</span>,
                             <span class="user-info__city">Москва</span>
                         </div>
-                        <div class="user-info__status">Заблокирован</div>
+                        <div class="user-info__status user-info__status--block">Заблокирован</div>
                     </div>
+                    <a href="" class="user-info__act">
+                        <svg version="1.1" fill="#939393" id="Capa_1" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <circle cx="192" cy="42.667" r="42.667"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <circle cx="192" cy="192" r="42.667"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <circle cx="192" cy="341.333" r="42.667"/>
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        </svg>
+                    </a>
+                    <ul class="dropdown dropdown--left">
+                        <li class="dropdown__item">
+                            <a href="" class="dropdown__act dropdown__act--block">Заблокировать</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="user-info__wrapper user-info__wrapper--padding">
@@ -563,7 +823,7 @@
                     </div>
                 </div>
                 <div class="user-info__characters">
-                    <div class="user-info__edit help">Ред.</div>
+                    <a href="" class="user-info__edit help">Ред.</a>
                     <ul class="user-info__list">
                         <li class="user-info__item">Панкреатит</li>
                         <li class="user-info__item">Язва</li>
