@@ -32,9 +32,9 @@
                         </li>
                         <li class="dropdown__item dropdown__item--separator">
                             <label class="switch-inline dropdown__link dropdown__link--day-off" for="switch-inline">
+                                <input type="checkbox" id="switch-inline" class="switch-inline__input">
                                 <span class="switch-inline__help">Выходной день</span>
                                 <div class="switch-inline__wrapper">
-                                    <input type="checkbox" id="switch-inline" class="switch-inline__input">
                                     <span class="switch-inline__slider"></span>
                                 </div>
                             </label>
@@ -184,7 +184,7 @@
                             </div>
                             <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
                         </div>
-                        <div class="messages__item">
+                        <div class="messages__item messages__item--dedicated">
                             <div class="messages__top">
                                 <div class="messages__author">
                                     <div class="messages__ava">
@@ -197,9 +197,9 @@
                                 </a>
                                 <span class="messages__data messages__data--active tooltip">Сегодня <span class="tooltip__text"> <span>13.09.19</span> в <span>14:45</span></span></span>
                             </div>
-                            <p class="messages__paragraph">Зравствуйте! Хочу похудеть на 25-30кг. Мой малоподвижный образ жизни, слабая сила воли, лень…</p>
+                            <p class="messages__paragraph">Новые данные — контроль</p>
                         </div>
-                        <div class="messages__item">
+                        <div class="messages__item messages__item--bold">
                             <div class="messages__top">
                                 <div class="messages__author">
                                     <div class="messages__ava">
@@ -1090,7 +1090,7 @@
                             </div>
                         </div>
                         <div class="tabs__wrapper">
-                            <a href="" class="tabs__edit">Ред.</a>
+                            <a href="" class="tabs__edit edit">Ред.</a>
                             <div class="tabs__inner">
                                 <div class="tabs__heading">Заболевания</div>
                                 <ul class="tabs__value">
@@ -1331,7 +1331,7 @@
                     </div>
                 </div>
                 <div class="user-info__characters">
-                    <a href="" class="user-info__edit help">Ред.</a>
+                    <a href="" class="user-info__edit edit help">Ред.</a>
                     <ul class="user-info__list">
                         <li class="user-info__item">Панкреатит</li>
                         <li class="user-info__item">Язва</li>
@@ -1373,7 +1373,13 @@
                 <p class="user-info__text">Марафон, 21-й день</p>
             </div>
             <div class="user-info__wrapper">
-                <input type="text" class="user-info__input input" placeholder="Написать заметку">
+                <div class="user-info__inner user-info__inner--between">
+                    <div class="user-info__purchases">Нет покупки</div>
+                    <a href="" class="user-info__btn user-info__btn--accent">Проверить оплату</a>
+                </div>
+            </div>
+            <div class="user-info__wrapper">
+                <input type="text" class="user-info__input input" id="input-add-note" placeholder="Написать заметку">
                 <div class="user-info__notes">
                     <p class="user-info__note">Выполняет все по программе, ждем результаты анализов на гармоны</p>
                 </div>
