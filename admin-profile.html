@@ -9,86 +9,102 @@
     <link rel="stylesheet" href="css/app.min.css">
 </head>
 <body class="scroll-visible">
-    <!-- Left nav -->
-    <aside class="nav nav--active">
-        <ul class="nav__list">
-            <li class="nav__item">
-                <a href="index.html" class="nav__link nav__link--chat">Чат</a>
-            </li>
-            <li class="nav__item">
-                <a href="admin-profile.html" class="nav__link nav__link--staff">Сотрудники</a>
-            </li>
-            <li class="nav__item">
-                <a href="users.html" class="nav__link nav__link--users">Пользователи</a>
-            </li>
-            <li class="nav__item">
-                <a href="" class="nav__link nav__link--reports">Отчеты</a>
-            </li>
-            <li class="nav__item">
-                <a href="admin-settings.html" class="nav__link nav__link--settings">Настройки</a>
-            </li>
-            <li class="nav__item nav__item--last">
-                <a href="admin-settings.html" class="nav__link nav__link--exit"></a>
-            </li>
-        </ul>
-    </aside>
-    <!-- End of left nav -->
-    <!-- Header -->
-    <header class="header header--nav">
-        <a href="" class="header__link">Сотрудники</a>
-    </header>
-    <!-- End of header -->
     <!-- Content -->
-    <div class="profile">
-        <form class="profile__wrapper">
-            <a href="" class="profile__heading">Профиль сотрудника</a>
-            <img src="img/dist/ava.png" alt="" class="profile__ava">
-            <h4 class="profile__name">Кристина Ивановна Константинова</h4>
-            <div class="profile__line">
-                <div class="profile__status profile__status--error">Нет доступа</div>
-                <a href="" class="profile__link link">Разблокировать</a>
-            </div>
-            <div class="profile__inner">
-                <div class="profile__wrap">
-                    <div class="profile__group">
-                        <span class="profile__help help">Фамилия</span>
-                        <input type="text" class="profile__input input" placeholder="Введите фамилию">
+    <div class="content">
+        <!-- Left nav -->
+        <aside class="nav nav--active">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link nav__link--chat">Чат</a>
+                </li>
+                <li class="nav__item">
+                    <a href="admin-profile.html" class="nav__link nav__link--staff">Сотрудники</a>
+                </li>
+                <li class="nav__item">
+                    <a href="users.html" class="nav__link nav__link--users">Пользователи</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link nav__link--reports">Отчеты</a>
+                </li>
+                <li class="nav__item">
+                    <a href="admin-settings.html" class="nav__link nav__link--settings">Настройки</a>
+                </li>
+                <li class="nav__item nav__item--last">
+                    <a href="admin-settings.html" class="nav__link nav__link--exit"></a>
+                </li>
+            </ul>
+        </aside>
+        <!-- End of left nav -->
+        <!-- Header -->
+        <header class="header header--nav">
+            <a href="" class="header__link">Сотрудники</a>
+        </header>
+        <!-- End of header -->
+        <div class="profile">
+            <form class="profile__wrapper">
+                <a href="" class="profile__heading">Профиль сотрудника</a>
+                <img src="img/dist/ava.png" alt="" class="profile__ava">
+                <h4 class="profile__name">Кристина Ивановна Константинова</h4>
+                <div class="profile__line">
+                    <div class="profile__status profile__status--error">Нет доступа</div>
+                    <a href="" class="profile__link link">Разблокировать</a>
+                </div>
+                <div class="profile__inner profile__inner--group">
+                    <div class="profile__wrap">
+                        <div class="profile__group">
+                            <span class="profile__help help">Фамилия</span>
+                            <input type="text" class="profile__input input" placeholder="Введите фамилию">
+                        </div>
+                        <div class="profile__group">
+                            <span class="profile__help help">Имя</span>
+                            <input type="text" class="profile__input input" placeholder="Введите имя">
+                        </div>
+                        <div class="profile__group">
+                            <span class="profile__help help">Отчество</span>
+                            <input type="text" class="profile__input input" placeholder="Введите отчество">
+                        </div>
                     </div>
-                    <div class="profile__group">
-                        <span class="profile__help help">Имя</span>
-                        <input type="text" class="profile__input input" placeholder="Введите имя">
+                    <div class="profile__wrap">
+                        <div class="profile__group">
+                            <span class="profile__help help">Эл. почта</span>
+                            <input type="text" class="profile__input input" placeholder="Введите эл. почту">
+                        </div>
                     </div>
-                    <div class="profile__group">
-                        <span class="profile__help help">Отчество</span>
-                        <input type="text" class="profile__input input" placeholder="Введите отчество">
+
+                    <div class="profile__wrap">
+                        <div class="profile__group">
+                            <span class="profile__help help">Эл. почта</span>
+                            <input type="text" class="profile__input input" placeholder="Введите эл. почту">
+                        </div>
+                    </div>
+
+                    <div class="profile__wrap">
+                        <div class="profile__group">
+                            <span class="profile__help help">Эл. почта</span>
+                            <input type="text" class="profile__input input" placeholder="Введите эл. почту">
+                        </div>
+                    </div>
+                    <div class="profile__wrap">
+                        <div class="profile__group">
+                            <span class="profile__help help">Роль</span>
+                            <select class="profile__select select">
+                                <option value="0">Не выбрана</option>
+                                <option value="1">Куратор</option>
+                            </select>
+                        </div>
+                        <div class="profile__group">
+                            <span class="profile__help help">Кол-во активных чатов</span>
+                            <select class="profile__select select">
+                                <option value="0">Не указано</option>
+                                <option value="1">Куратор</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div class="profile__wrap">
-                    <div class="profile__group">
-                        <span class="profile__help help">Эл. почта</span>
-                        <input type="text" class="profile__input input" placeholder="Введите эл. почту">
-                    </div>
-                </div>
-                <div class="profile__wrap">
-                    <div class="profile__group">
-                        <span class="profile__help help">Роль</span>
-                        <select class="profile__select select">
-                            <option value="0">Не выбрана</option>
-                            <option value="1">Куратор</option>
-                        </select>
-                    </div>
-                    <div class="profile__group">
-                        <span class="profile__help help">Кол-во активных чатов</span>
-                        <select class="profile__select select">
-                            <option value="0">Не указано</option>
-                            <option value="1">Куратор</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <button class="profile__btn btn">Сохранить</button>
-            <a href="" class="profile__heading profile__heading--bottom">Удалить пользователя</a>
-        </form>
+                <button class="profile__btn btn">Сохранить</button>
+                <a href="" class="profile__heading profile__heading--bottom">Удалить пользователя</a>
+            </form>
+        </div>
     </div>
     <!-- End of content -->
     <!-- Scripts -->

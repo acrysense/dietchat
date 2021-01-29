@@ -9,77 +9,79 @@
     <link rel="stylesheet" href="css/app.min.css">
 </head>
 <body>
-    <!-- Left nav -->
-    <aside class="nav nav--active">
-        <ul class="nav__list">
-            <li class="nav__item">
-                <a href="index.html" class="nav__link nav__link--chat">Чат</a>
-            </li>
-            <li class="nav__item">
-                <a href="admin-profile.html" class="nav__link nav__link--staff">Сотрудники</a>
-            </li>
-            <li class="nav__item">
-                <a href="users.html" class="nav__link nav__link--users">Пользователи</a>
-            </li>
-            <li class="nav__item">
-                <a href="" class="nav__link nav__link--reports">Отчеты</a>
-            </li>
-            <li class="nav__item">
-                <a href="admin-settings.html" class="nav__link nav__link--settings">Настройки</a>
-            </li>
-            <li class="nav__item nav__item--last">
-                <a href="admin-settings.html" class="nav__link nav__link--exit"></a>
-            </li>
-        </ul>
-    </aside>
-    <!-- End of left nav -->
     <!-- Content -->
-    <div class="heading">
-        <h2 class="heading__title">Настройки</h2>
-    </div>
-    <div class="settings">
-        <div class="settings__wrapper">
-            <h4 class="settings__title help">Распределение новых клиентов</h4>
-            <label for="new-clients1" class="circle-checkbox">
-                <input type="radio" id="new-clients1" name="new-clients" class="circle-checkbox__input">
-                <span class="circle-checkbox__icon"></span>
-                <span class="circle-checkbox__title">Последовательно каждому куратору</span>
-            </label>
-            <label for="new-clients2" class="circle-checkbox">
-                <input type="radio" id="new-clients2" name="new-clients" class="circle-checkbox__input">
-                <span class="circle-checkbox__icon"></span>
-                <span class="circle-checkbox__title">Всех новых на конкретного куратора</span>
-            </label>
-            <select name="" id="" class="settings__select select">
-                <option value="0">Константинов Иван</option>
-                <option value="0">Константинов Иван</option>
-            </select>
+    <div class="content">
+        <!-- Left nav -->
+        <aside class="nav nav--static">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link nav__link--chat">Чат</a>
+                </li>
+                <li class="nav__item">
+                    <a href="admin-profile.html" class="nav__link nav__link--staff">Сотрудники</a>
+                </li>
+                <li class="nav__item">
+                    <a href="users.html" class="nav__link nav__link--users">Пользователи</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link nav__link--reports">Отчеты</a>
+                </li>
+                <li class="nav__item">
+                    <a href="admin-settings.html" class="nav__link nav__link--settings">Настройки</a>
+                </li>
+                <li class="nav__item nav__item--last">
+                    <a href="admin-settings.html" class="nav__link nav__link--exit"></a>
+                </li>
+            </ul>
+        </aside>
+        <!-- End of left nav -->
+        <div class="heading">
+            <h2 class="heading__title">Настройки</h2>
         </div>
-        <div class="settings__wrapper">
-            <h4 class="settings__title help">Закреплять пользователей с рассрочкой</h4>
-            <label for="fix-users1" class="square-checkbox">
-                <input type="radio" id="fix-users1" name="fix-users" class="square-checkbox__input">
-                <span class="square-checkbox__icon"></span>
-                <span class="square-checkbox__title">Константинов Константин Игоревич</span>
-            </label>
-            <label for="fix-users2" class="square-checkbox">
-                <input type="radio" id="fix-users2" name="fix-users" class="square-checkbox__input">
-                <span class="square-checkbox__icon"></span>
-                <span class="square-checkbox__title">Константинов Константин Игоревич</span>
-            </label>
-            <label for="fix-users3" class="square-checkbox">
-                <input type="radio" id="fix-users3" name="fix-users" class="square-checkbox__input">
-                <span class="square-checkbox__icon"></span>
-                <span class="square-checkbox__title">Константинов Константин Игоревич</span>
-            </label>
-            <label for="fix-users4" class="square-checkbox">
-                <input type="radio" id="fix-users4" name="fix-users" class="square-checkbox__input">
-                <span class="square-checkbox__icon"></span>
-                <span class="square-checkbox__title">Константинов Константин Игоревич</span>
-            </label>
-        </div>
-        <div class="settings__wrapper">
-            <a href="" class="settings__btn btn">Сохранить</a>
+        <div class="settings">
+            <div class="settings__wrapper">
+                <h4 class="settings__title help">Распределение новых клиентов</h4>
+                <label for="new-clients1" class="circle-checkbox">
+                    <input type="radio" id="new-clients1" name="new-clients" class="circle-checkbox__input">
+                    <span class="circle-checkbox__icon"></span>
+                    <span class="circle-checkbox__title">Последовательно каждому куратору</span>
+                </label>
+                <label for="new-clients2" class="circle-checkbox">
+                    <input type="radio" id="new-clients2" name="new-clients" class="circle-checkbox__input">
+                    <span class="circle-checkbox__icon"></span>
+                    <span class="circle-checkbox__title">Всех новых на конкретного куратора</span>
+                </label>
+                <select name="" id="" class="settings__select select">
+                    <option value="0">Константинов Иван</option>
+                    <option value="0">Константинов Иван</option>
+                </select>
+            </div>
+            <div class="settings__wrapper">
+                <h4 class="settings__title help">Закреплять пользователей с рассрочкой</h4>
+                <label for="fix-users1" class="square-checkbox">
+                    <input type="radio" id="fix-users1" name="fix-users" class="square-checkbox__input">
+                    <span class="square-checkbox__icon"></span>
+                    <span class="square-checkbox__title">Константинов Константин Игоревич</span>
+                </label>
+                <label for="fix-users2" class="square-checkbox">
+                    <input type="radio" id="fix-users2" name="fix-users" class="square-checkbox__input">
+                    <span class="square-checkbox__icon"></span>
+                    <span class="square-checkbox__title">Константинов Константин Игоревич</span>
+                </label>
+                <label for="fix-users3" class="square-checkbox">
+                    <input type="radio" id="fix-users3" name="fix-users" class="square-checkbox__input">
+                    <span class="square-checkbox__icon"></span>
+                    <span class="square-checkbox__title">Константинов Константин Игоревич</span>
+                </label>
+                <label for="fix-users4" class="square-checkbox">
+                    <input type="radio" id="fix-users4" name="fix-users" class="square-checkbox__input">
+                    <span class="square-checkbox__icon"></span>
+                    <span class="square-checkbox__title">Константинов Константин Игоревич</span>
+                </label>
+            </div>
+            <div class="settings__wrapper">
+                <a href="" class="settings__btn btn">Сохранить</a>
+            </div>
         </div>
     </div>
     <!-- End of content -->

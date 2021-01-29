@@ -9,86 +9,104 @@
     <link rel="stylesheet" href="css/app.min.css">
 </head>
 <body>
-    <!-- Left nav -->
-    <aside class="nav">
-        <ul class="nav__list">
-            <li class="nav__item">
-                <a href="index.html" class="nav__link nav__link--chat">Чат</a>
-            </li>
-            <li class="nav__item">
-                <a href="admin-profile.html" class="nav__link nav__link--staff">Сотрудники</a>
-            </li>
-            <li class="nav__item">
-                <a href="users.html" class="nav__link nav__link--users">Пользователи</a>
-            </li>
-            <li class="nav__item">
-                <a href="" class="nav__link nav__link--reports">Отчеты</a>
-            </li>
-            <li class="nav__item">
-                <a href="admin-settings.html" class="nav__link nav__link--settings">Настройки</a>
-            </li>
-            <li class="nav__item nav__item--last">
-                <a href="admin-settings.html" class="nav__link nav__link--exit"></a>
-            </li>
-        </ul>
-    </aside>
-    <!-- End of left nav -->
-    <!-- Header -->
-    <header class="header">
-        <button class="hamburger" id="hamburger-toggle">
-            Меню
-            <span class="hamburger__inner"></span>
-            <span class="hamburger__inner"></span>
-            <span class="hamburger__inner"></span>
-        </button>
-        <h2 class="header__title">Профиль</h2>
-    </header>
-    <!-- End of header -->
     <!-- Content -->
-    <div class="profile">
-        <form class="profile__wrapper">
-            <label class="upload-file" for="upload-file__upload">
-                <input
-                    type="file"
-                    name="files[]"
-                    id="upload-file__upload"
-                    class="upload-file__input"
-                    accept=".jpg, .jpeg, .png"
-                    oninput="onFileSelected(event)"
-                >
-                <span class="upload-file__btn">+ фото</span>
-            </label>
-            <h4 class="profile__name">Кристина Ивановна Константинова</h4>
-            <div class="profile__status">Куратор</div>
-            <a href="mailto:kristina@gmail.com" class="profile__email">kristina@gmail.com</a>
-            <div class="profile__inner">
-                <div class="profile__group">
-                    <span class="profile__help help">Фамилия</span>
-                    <input type="text" class="profile__input input" placeholder="Введите фамилию">
+    <div class="content">
+        <!-- Left nav -->
+        <aside class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link nav__link--chat">Чат</a>
+                </li>
+                <li class="nav__item">
+                    <a href="admin-profile.html" class="nav__link nav__link--staff">Сотрудники</a>
+                </li>
+                <li class="nav__item">
+                    <a href="users.html" class="nav__link nav__link--users">Пользователи</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link nav__link--reports">Отчеты</a>
+                </li>
+                <li class="nav__item">
+                    <a href="admin-settings.html" class="nav__link nav__link--settings">Настройки</a>
+                </li>
+                <li class="nav__item nav__item--last">
+                    <a href="admin-settings.html" class="nav__link nav__link--exit"></a>
+                </li>
+            </ul>
+        </aside>
+        <!-- End of left nav -->
+        <!-- Header -->
+        <header class="header">
+            <button class="hamburger" id="hamburger-toggle">
+                Меню
+                <span class="hamburger__inner"></span>
+                <span class="hamburger__inner"></span>
+                <span class="hamburger__inner"></span>
+            </button>
+            <h2 class="header__title">Профиль</h2>
+        </header>
+        <!-- End of header -->
+        <div class="profile">
+            <form class="profile__wrapper">
+                <label class="upload-file" for="upload-file__upload">
+                    <input
+                        type="file"
+                        name="files[]"
+                        id="upload-file__upload"
+                        class="upload-file__input"
+                        accept=".jpg, .jpeg, .png"
+                        oninput="onFileSelected(event)"
+                    >
+                    <span class="upload-file__btn">+ фото</span>
+                </label>
+                <h4 class="profile__name">Кристина Ивановна Константинова</h4>
+                <div class="profile__status">Куратор</div>
+                <a href="mailto:kristina@gmail.com" class="profile__email">kristina@gmail.com</a>
+                <div class="profile__inner">
+                    <div class="profile__group">
+                        <span class="profile__help help">Фамилия</span>
+                        <input type="text" class="profile__input input" placeholder="Введите фамилию">
+                    </div>
+                    <div class="profile__group">
+                        <span class="profile__help help">Имя</span>
+                        <input type="text" class="profile__input input" placeholder="Введите имя">
+                    </div>
+                    <div class="profile__group">
+                        <span class="profile__help help">Отчество</span>
+                        <input type="text" class="profile__input input" placeholder="Введите отчество">
+                    </div>
+                    <div class="profile__group">
+                        <span class="profile__help help">E-mail</span>
+                        <input type="text" class="profile__input input" placeholder="Введите e-mail">
+                    </div>
+                    <div class="profile__group">
+                        <span class="profile__help help">Пароль</span>
+                        <input type="text" class="profile__input input" placeholder="Введите пароль">
+                    </div>
+                    <div class="profile__group">
+                        <span class="profile__help help">E-mail</span>
+                        <input type="text" class="profile__input input" placeholder="Введите e-mail">
+                    </div>
+                    <div class="profile__group">
+                        <span class="profile__help help">Пароль</span>
+                        <input type="text" class="profile__input input" placeholder="Введите пароль">
+                    </div>
+                    <div class="profile__group">
+                        <span class="profile__help help">E-mail</span>
+                        <input type="text" class="profile__input input" placeholder="Введите e-mail">
+                    </div>
+                    <div class="profile__group">
+                        <span class="profile__help help">Пароль</span>
+                        <input type="text" class="profile__input input" placeholder="Введите пароль">
+                    </div>
+                    <button class="profile__btn btn">Сохранить</button>
                 </div>
-                <div class="profile__group">
-                    <span class="profile__help help">Имя</span>
-                    <input type="text" class="profile__input input" placeholder="Введите имя">
-                </div>
-                <div class="profile__group">
-                    <span class="profile__help help">Отчество</span>
-                    <input type="text" class="profile__input input" placeholder="Введите отчество">
-                </div>
-                <div class="profile__group">
-                    <span class="profile__help help">E-mail</span>
-                    <input type="text" class="profile__input input" placeholder="Введите e-mail">
-                </div>
-                <div class="profile__group">
-                    <span class="profile__help help">Пароль</span>
-                    <input type="text" class="profile__input input" placeholder="Введите пароль">
-                </div>
-                <button class="profile__btn btn">Сохранить</button>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
     <!-- End of content -->
     <!-- Scripts -->
-    <script>
+    <!--<script>
         let uploadFileInput = document.getElementById('upload-file')
 
         // UPLOAD FILE
@@ -183,7 +201,7 @@
             });
 
         });
-    </script>
+    </script>-->
     <script src="js/app.min.js"></script>
 </body>
 </html>
